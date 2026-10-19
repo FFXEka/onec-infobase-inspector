@@ -1,0 +1,32 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" version="2.20">
+	<ExternalDataProcessor uuid="4d1e1243-dc2d-5ad9-9745-ff9a2a281aa8">
+		<InternalInfo>
+			<xr:ContainedObject>
+				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
+				<xr:ObjectId>473d0310-b892-56c2-bfea-4e7803a180f9</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:GeneratedType name="ExternalDataProcessorObject.МодульИнтерфейсОбработки4137_be9277ced5053957b345f" category="Object">
+				<xr:TypeId>e1df9090-704e-595d-80da-ed20f621800d</xr:TypeId>
+				<xr:ValueId>9f19311a-aedb-5a4e-889b-a11f2e0d82b3</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>МодульИнтерфейсОбработки4137_be9277ced5053957b345f</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Построитель формы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Автор Сушков Дмитрий https://infostart.ru/profile/510125/</Comment>
+			</Properties>
+		<ChildObjects>
+			<Form>Диалоги83</Form>
+			<Form>Загрузка8313</Form>
+			<Form>Приложение8310</Form>
+			<Form>Скачивание8315</Form>
+			<Form>Файлы836</Form>
+			</ChildObjects>
+	</ExternalDataProcessor>
+</MetaDataObject>

@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandBarLocation>None</CommandBarLocation>
+	<Height>100</Height>
+	<Width>300</Width>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Visible>false</Visible>
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="СостояниеЗагрузки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные считываются…</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СостояниеЗагрузкиРасширеннаяПодсказка" id="4" />
+		</LabelDecoration>
+		<Pages name="СтраницыПросмотра" id="5">
+			<Visible>false</Visible>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыПросмотраРасширеннаяПодсказка" id="6" />
+			<ChildItems>
+				<Page name="СтраницаОсновная" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизиты</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаОсновнаяРасширеннаяПодсказка" id="8" />
+					<ChildItems>
+						<UsualGroup name="ПоказателиОсновная" id="23">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ПоказателиОсновнаяРасширеннаяПодсказка" id="24" />
+							<ChildItems>
+								<UsualGroup name="ЗначенияПоказателейОсновная" id="25">
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ЗначенияПоказателейОсновнаяРасширеннаяПодсказка" id="26" />
+								</UsualGroup>
+								<LabelDecoration name="ОшибкаКоличествоОсновная" id="27">
+									<Visible>false</Visible>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ExtendedTooltip name="ОшибкаКоличествоОсновнаяРасширеннаяПодсказка" id="28" />
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ПоляОсновная" id="9">
+							<DataPath>ПоляОсновная</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<EnableDrag>false</EnableDrag>
+							<EnableStartDrag>false</EnableStartDrag>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<ExtendedTooltip name="ПоляОсновнаяРасширеннаяПодсказка" id="10" />
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаТабличныеЧасти" id="11">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Табличные части</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаТабличныеЧастиРасширеннаяПодсказка" id="12" />
+					<ChildItems>
+						<Pages name="СтраницыТабличныхЧастей" id="13">
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<PagesRepresentation>TabsOnTop</PagesRepresentation>
+							<ExtendedTooltip name="СтраницыТабличныхЧастейРасширеннаяПодсказка" id="14" />
+						</Pages>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаДвижения" id="15">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Движения</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаДвиженияРасширеннаяПодсказка" id="16" />
+					<ChildItems>
+						<Pages name="СтраницыДвижения" id="17">
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<PagesRepresentation>TabsOnTop</PagesRepresentation>
+							<ExtendedTooltip name="СтраницыДвиженияРасширеннаяПодсказка" id="18" />
+						</Pages>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаЗависимыеОбъекты" id="19">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Зависимые объекты</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаЗависимыеОбъектыРасширеннаяПодсказка" id="20" />
+					<ChildItems>
+						<Table name="ЗависимыеОбъекты" id="21">
+							<DataPath>ЗависимыеОбъекты</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<EnableDrag>false</EnableDrag>
+							<EnableStartDrag>false</EnableStartDrag>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<ExtendedTooltip name="ЗависимыеОбъектыРасширеннаяПодсказка" id="22" />
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ДанныеИнформационнойБазыИСистемы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПолноеИмяМетаданных" id="2">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоляОсновная" id="3">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗависимыеОбъекты" id="4">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Parameters>
+		<Parameter name="ПолноеИмяМетаданных">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+	<Commands />
+</Form>

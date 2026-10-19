@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" version="2.20">
+	<ExternalDataProcessor uuid="8419f6f0-41b9-506d-a6c4-ae9becd03625">
+		<InternalInfo>
+			<xr:ContainedObject>
+				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
+				<xr:ObjectId>ab6fec6a-823f-5f8d-a938-7da1f7d02cdb</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:GeneratedType name="ExternalDataProcessorObject.МодульСнимкиСканирования4137_be9277ced5053957b345f" category="Object">
+				<xr:TypeId>e59cb491-a595-589f-9b55-15ef0c4a5e01</xr:TypeId>
+				<xr:ValueId>8e7ecc10-b232-5be2-8df2-058e89dd4621</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>МодульСнимкиСканирования4137_be9277ced5053957b345f</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Построитель формы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Автор Сушков Дмитрий https://infostart.ru/profile/510125/</Comment>
+			</Properties>
+		<ChildObjects>
+			</ChildObjects>
+	</ExternalDataProcessor>
+</MetaDataObject>

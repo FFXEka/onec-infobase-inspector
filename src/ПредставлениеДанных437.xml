@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" version="2.20">
+	<ExternalDataProcessor uuid="3ed09ffa-3498-57b4-8959-501078bf9425">
+		<InternalInfo>
+			<xr:ContainedObject>
+				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
+				<xr:ObjectId>6c8ca895-0753-58ee-a15f-1f05ed463089</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:GeneratedType name="ExternalDataProcessorObject.МодульПредставлениеДанных4137_be9277ced5053957b345f" category="Object">
+				<xr:TypeId>c6c9cabb-a3ad-549e-97fe-33fe282bcff1</xr:TypeId>
+				<xr:ValueId>7c540ef1-3858-5cf3-aca9-a921717afe7c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>МодульПредставлениеДанных4137_be9277ced5053957b345f</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Построитель формы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Автор Сушков Дмитрий https://infostart.ru/profile/510125/</Comment>
+			</Properties>
+		<ChildObjects>
+			</ChildObjects>
+	</ExternalDataProcessor>
+</MetaDataObject>

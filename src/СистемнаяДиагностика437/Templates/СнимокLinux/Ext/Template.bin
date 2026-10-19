@@ -1,0 +1,77 @@
+#!/bin/sh
+# Fixed read-only commands. Each section records its own status.
+PATH=/usr/bin:/bin
+LC_ALL=C
+export PATH LC_ALL
+section() { printf '\n[%s]\n' "$1"; }
+status() { printf '\n@status=%s\n' "$1"; }
+file_section() {
+ section "$1"
+ if [ -r "$2" ]; then cat "$2"; status "$?"; else status 1; fi
+}
+{
+ file_section os /etc/os-release
+ file_section memory /proc/meminfo
+ file_section uptime /proc/uptime
+ file_section cpuinfo /proc/cpuinfo
+ file_section swap /proc/swaps
+ section board
+ board_status=0
+ board_found=0
+ for key in board_vendor board_name; do
+  board_file="/sys/class/dmi/id/$key"
+  if [ -r "$board_file" ]; then board_found=1; printf '%s=' "$key"; cat "$board_file" || board_status=$?; printf '\n'; fi
+ done
+ [ "$board_found" -eq 0 ] && board_status=1
+ status "$board_status"
+ file_section identity /etc/machine-id
+ section virtualization
+ virtualization_status=1
+ if command -v systemd-detect-virt >/dev/null 2>&1; then
+  systemd-detect-virt --container --quiet >/dev/null 2>&1
+  container_status=$?
+  if [ "$container_status" -eq 1 ]; then
+   virtualization=$(systemd-detect-virt --vm 2>/dev/null)
+   virtualization_status=$?
+   [ "$virtualization_status" -eq 0 ] && printf '%s\n' "$virtualization"
+  fi
+ fi
+ status "$virtualization_status"
+ section physical
+ physical_status=0
+ physical_found=0
+ for device in /sys/block/*; do
+  [ -r "$device/size" ] || continue
+  name=${device##*/}
+  case "$name" in loop*|ram*|zram*|dm-*|md*|sr*|fd*) continue;; esac
+  physical_found=1
+  sectors=$(cat "$device/size")
+  device_status=$?
+  [ "$device_status" -eq 0 ] || { physical_status=$device_status; continue; }
+  model=''
+  if [ -r "$device/device/model" ]; then model=$(cat "$device/device/model") || physical_status=$?; fi
+  printf '%s|%s|%s\n' "$name" "$model" "$sectors"
+ done
+ [ "$physical_found" -eq 0 ] && physical_status=1
+ status "$physical_status"
+ section cpu_before
+ head -n 1 /proc/stat
+ status "$?"
+ sleep 0.2
+ section cpu_after
+ head -n 1 /proc/stat
+ status "$?"
+ file_section mounts /proc/self/mountinfo
+ section disks
+ if df --help 2>/dev/null | awk '/--output/ {found=1} END {exit !found}'; then
+  disk_output=$(df -B1 --output=size,avail,target -l -x tmpfs -x devtmpfs -x squashfs 2>/dev/null)
+  disk_status=$?
+  printf '%s\n' "$disk_output" | awk 'NR>1 {size=$1;free=$2;sub(/^[ ]*[0-9]+[ ]+[0-9]+[ ]+/,"");printf "%s|%s|%s\n",size,free,$0}'
+ else
+  disk_output=$(df -kP -l -x tmpfs -x devtmpfs -x squashfs 2>/dev/null)
+  disk_status=$?
+  printf '%s\n' "$disk_output" | awk 'NR>1 && $2 ~ /^[0-9]+$/ {size=$2*1024;free=$4*1024;sub(/^[^ ]+[ ]+[0-9]+[ ]+[0-9]+[ ]+[0-9]+[ ]+[^ ]+[ ]+/,"");printf "%.0f|%.0f|%s\n",size,free,$0}'
+ fi
+ status "$disk_status"
+ section complete
+} > "$1"

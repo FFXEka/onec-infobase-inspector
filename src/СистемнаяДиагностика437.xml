@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" version="2.20">
+	<ExternalDataProcessor uuid="b38f57cf-8844-580c-bf7a-005a18d61977">
+		<InternalInfo>
+			<xr:ContainedObject>
+				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
+				<xr:ObjectId>f84e1ff9-27a6-598e-8aef-c0811108cd77</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:GeneratedType name="ExternalDataProcessorObject.МодульСистемныеСведения4137_be9277ced5053957b345f" category="Object">
+				<xr:TypeId>1c77835a-383d-5c05-ad68-53c3311149be</xr:TypeId>
+				<xr:ValueId>1c270a5c-9006-54d8-a29e-a05b911291f0</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>МодульСистемныеСведения4137_be9277ced5053957b345f</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Построитель формы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Автор Сушков Дмитрий https://infostart.ru/profile/510125/</Comment>
+			</Properties>
+		<ChildObjects><Form>СведенияОКомпьютерах</Form>
+			<Template>СнимокLinux</Template></ChildObjects>
+	</ExternalDataProcessor>
+</MetaDataObject>

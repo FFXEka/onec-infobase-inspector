@@ -1,0 +1,1110 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnClose">ПриЗакрытии</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="364">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="479" />
+			<ChildItems>
+				<CommandBar name="Команды" id="309">
+					<EnableContentChange>true</EnableContentChange>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Команды</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="КомандыРасширеннаяПодсказка" id="480" />
+					<ChildItems>
+						<Button name="СканироватьВсе" id="3556">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.СканироватьВсе</CommandName>
+							<Representation>PictureAndText</Representation>
+							<DefaultButton>true</DefaultButton>
+							<ExtendedTooltip name="СканироватьВсеРасширеннаяПодсказка" id="3557" />
+						</Button>
+						<Popup name="КомандыСканирования" id="3558">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сканировать...</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КомандыСканированияРасширеннаяПодсказка" id="3559" />
+							<ChildItems>
+								<Button name="СканироватьОсновные" id="3560">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СканироватьОсновные</CommandName>
+									<Representation>PictureAndText</Representation>
+									<ExtendedTooltip name="СканироватьОсновныеРасширеннаяПодсказка" id="3561" />
+								</Button>
+								<Button name="СканироватьДополнительные" id="3562">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СканироватьДополнительные</CommandName>
+									<Representation>PictureAndText</Representation>
+									<ExtendedTooltip name="СканироватьДополнительныеРасширеннаяПодсказка" id="3563" />
+								</Button>
+								<Button name="СистемныеСведения" id="3564">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СистемныеСведения</CommandName>
+									<Representation>PictureAndText</Representation>
+									<ExtendedTooltip name="СистемныеСведенияРасширеннаяПодсказка" id="3565" />
+								</Button>
+							</ChildItems>
+						</Popup>
+						<Popup name="СравнениеСканов" id="3566">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сравнить...</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="СравнениеСкановРасширеннаяПодсказка" id="3567" />
+							<ChildItems>
+								<Button name="ЗапомнитьСкан" id="3568">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ЗапомнитьСкан</CommandName>
+									<Representation>PictureAndText</Representation>
+									<ExtendedTooltip name="ЗапомнитьСканРасширеннаяПодсказка" id="3569" />
+								</Button>
+								<Button name="СохранитьСкан" id="3570">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СохранитьСкан</CommandName>
+									<Representation>PictureAndText</Representation>
+									<ExtendedTooltip name="СохранитьСканРасширеннаяПодсказка" id="3571" />
+								</Button>
+								<Button name="ЗагрузитьСканДляСравнения" id="3572">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ЗагрузитьСканДляСравнения</CommandName>
+									<Representation>PictureAndText</Representation>
+									<ExtendedTooltip name="ЗагрузитьСканДляСравненияРасширеннаяПодсказка" id="3573" />
+								</Button>
+							</ChildItems>
+						</Popup>
+						<Button name="НапечататьСкан" id="3574">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.НапечататьСкан</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.Print</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Representation>PictureAndText</Representation>
+							<ExtendedTooltip name="НапечататьСканРасширеннаяПодсказка" id="3575" />
+						</Button>
+						<Popup name="ОткрытьФормы" id="3576">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Открыть...</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ОткрытьФормыРасширеннаяПодсказка" id="3577" />
+							<ChildItems>
+								<Button name="ОткрытьОсновнуюФормуСписка" id="3578">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ОткрытьОсновнуюФормуСписка</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Form</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Representation>PictureAndText</Representation>
+									<ExtendedTooltip name="ОткрытьОсновнуюФормуСпискаРасширеннаяПодсказка" id="3579" />
+								</Button>
+								<Button name="ОткрытьУниверсальнуюФормуСписка" id="3580">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ОткрытьУниверсальнуюФормуСписка</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Form</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Representation>PictureAndText</Representation>
+									<ExtendedTooltip name="ОткрытьУниверсальнуюФормуСпискаРасширеннаяПодсказка" id="3581" />
+								</Button>
+								<Button name="ОткрытьПодробныйПросмотр" id="3582">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ОткрытьПодробныйПросмотр</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Form</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Representation>PictureAndText</Representation>
+									<ExtendedTooltip name="ОткрытьПодробныйПросмотрРасширеннаяПодсказка" id="3583" />
+								</Button>
+							</ChildItems>
+						</Popup>
+						<Button name="ПерейтиНаСтраницуАвтора" id="3584">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПерейтиНаСтраницуАвтора</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.User</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Representation>PictureAndText</Representation>
+							<ExtendedTooltip name="ПерейтиНаСтраницуАвтораРасширеннаяПодсказка" id="3585" />
+						</Button>
+						<Button name="ПоказатьСправку" id="3586">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПоказатьСправку</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.Help</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Representation>Picture</Representation>
+							<ExtendedTooltip name="ПоказатьСправкуРасширеннаяПодсказка" id="3587" />
+						</Button>
+					</ChildItems>
+				</CommandBar>
+				<LabelDecoration name="НадписьПоследняяПродолжительность" id="446">
+					<ContextMenu name="НадписьПоследняяПродолжительностьКонтекстноеМеню" id="447" />
+					<ExtendedTooltip name="НадписьПоследняяПродолжительностьРасширеннаяПодсказка" id="481" />
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="СтраницыВерхнийУровень" id="454">
+            <HorizontalStretch>true</HorizontalStretch>
+            <VerticalStretch>true</VerticalStretch>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы верхний уровень</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы верхний уровень</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыВерхнийУровеньРасширеннаяПодсказка" id="482" />
+			<ChildItems>
+				<Page name="КраткаяИнформация" id="460">
+                <Title><v8:item><v8:lang>ru</v8:lang><v8:content>Системные</v8:content></v8:item></Title>
+                <ExtendedTooltip name="КраткаяИнформацияРасширеннаяПодсказка" id="483"/>
+                <ChildItems>
+                    <SpreadSheetDocumentField name="СистемныеСведенияДокумент" id="50001">
+                        <DataPath>СистемныеСведенияДокумент</DataPath>
+                        <ReadOnly>true</ReadOnly>
+                        <TitleLocation>None</TitleLocation>
+                        <Width>1</Width>
+                        <Height>12</Height>
+                        <HorizontalStretch>true</HorizontalStretch>
+                        <VerticalStretch>true</VerticalStretch>
+                        <ShowGrid>false</ShowGrid>
+                        <ShowHeaders>false</ShowHeaders>
+                        <ShowGroups>false</ShowGroups>
+                        <Protection>false</Protection>
+                        <Edit>false</Edit>
+                        <EnableDrag>false</EnableDrag>
+                        <EnableStartDrag>false</EnableStartDrag>
+                        <ContextMenu name="СистемныеСведенияДокументКонтекстноеМеню" id="50002"/>
+                        <ExtendedTooltip name="СистемныеСведенияДокументРасширеннаяПодсказка" id="50003"/>
+                    </SpreadSheetDocumentField>
+                </ChildItems>
+            </Page>
+				<Page name="Информация" id="456">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ИнформацияРасширеннаяПодсказка" id="487" />
+					<ChildItems>
+						<Pages name="СтраницыИнформации" id="3">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы информации</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<PagesRepresentation>TabsOnTop</PagesRepresentation>
+							<ExtendedTooltip name="СтраницыИнформацииРасширеннаяПодсказка" id="488" />
+							<ChildItems>
+								<Page name="СтрСводная" id="3588">
+									<ExtendedTooltip name="СтрСводнаяРасширеннаяПодсказка" id="3589" />
+									<ChildItems>
+										<Table name="Сводная" id="3590">
+											<DataPath>Сводная</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<EnableDrag>false</EnableDrag>
+											<EnableStartDrag>false</EnableStartDrag>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="СводнаяРасширеннаяПодсказка" id="3591" />
+										</Table>
+										<LabelDecoration name="НедоступностьСводная" id="3592">
+											<Visible>false</Visible>
+											<ExtendedTooltip name="НедоступностьСводнаяРасширеннаяПодсказка" id="3593" />
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтрСправочник" id="3594">
+									<ExtendedTooltip name="СтрСправочникРасширеннаяПодсказка" id="3595" />
+									<ChildItems>
+										<Table name="Справочник" id="3596">
+											<DataPath>Справочник</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<EnableDrag>false</EnableDrag>
+											<EnableStartDrag>false</EnableStartDrag>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="СправочникРасширеннаяПодсказка" id="3597" />
+										</Table>
+										<LabelDecoration name="НедоступностьСправочник" id="3598">
+											<Visible>false</Visible>
+											<ExtendedTooltip name="НедоступностьСправочникРасширеннаяПодсказка" id="3599" />
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтрДокумент" id="3600">
+									<ExtendedTooltip name="СтрДокументРасширеннаяПодсказка" id="3601" />
+									<ChildItems>
+										<Table name="Документ" id="3602">
+											<DataPath>Документ</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<EnableDrag>false</EnableDrag>
+											<EnableStartDrag>false</EnableStartDrag>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="ДокументРасширеннаяПодсказка" id="3603" />
+										</Table>
+										<LabelDecoration name="НедоступностьДокумент" id="3604">
+											<Visible>false</Visible>
+											<ExtendedTooltip name="НедоступностьДокументРасширеннаяПодсказка" id="3605" />
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтрРегистрСведений" id="3606">
+									<ExtendedTooltip name="СтрРегистрСведенийРасширеннаяПодсказка" id="3607" />
+									<ChildItems>
+										<Table name="РегистрСведений" id="3608">
+											<DataPath>РегистрСведений</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<EnableDrag>false</EnableDrag>
+											<EnableStartDrag>false</EnableStartDrag>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="РегистрСведенийРасширеннаяПодсказка" id="3609" />
+										</Table>
+										<LabelDecoration name="НедоступностьРегистрСведений" id="3610">
+											<Visible>false</Visible>
+											<ExtendedTooltip name="НедоступностьРегистрСведенийРасширеннаяПодсказка" id="3611" />
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтрРегистрНакопления" id="3612">
+									<ExtendedTooltip name="СтрРегистрНакопленияРасширеннаяПодсказка" id="3613" />
+									<ChildItems>
+										<Table name="РегистрНакопления" id="3614">
+											<DataPath>РегистрНакопления</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<EnableDrag>false</EnableDrag>
+											<EnableStartDrag>false</EnableStartDrag>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="РегистрНакопленияРасширеннаяПодсказка" id="3615" />
+										</Table>
+										<LabelDecoration name="НедоступностьРегистрНакопления" id="3616">
+											<Visible>false</Visible>
+											<ExtendedTooltip name="НедоступностьРегистрНакопленияРасширеннаяПодсказка" id="3617" />
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтрРегистрБухгалтерии" id="3618">
+									<ExtendedTooltip name="СтрРегистрБухгалтерииРасширеннаяПодсказка" id="3619" />
+									<ChildItems>
+										<Table name="РегистрБухгалтерии" id="3620">
+											<DataPath>РегистрБухгалтерии</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<EnableDrag>false</EnableDrag>
+											<EnableStartDrag>false</EnableStartDrag>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="РегистрБухгалтерииРасширеннаяПодсказка" id="3621" />
+										</Table>
+										<LabelDecoration name="НедоступностьРегистрБухгалтерии" id="3622">
+											<Visible>false</Visible>
+											<ExtendedTooltip name="НедоступностьРегистрБухгалтерииРасширеннаяПодсказка" id="3623" />
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтрРегистрРасчета" id="3624">
+									<ExtendedTooltip name="СтрРегистрРасчетаРасширеннаяПодсказка" id="3625" />
+									<ChildItems>
+										<Table name="РегистрРасчета" id="3626">
+											<DataPath>РегистрРасчета</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<EnableDrag>false</EnableDrag>
+											<EnableStartDrag>false</EnableStartDrag>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="РегистрРасчетаРасширеннаяПодсказка" id="3627" />
+										</Table>
+										<LabelDecoration name="НедоступностьРегистрРасчета" id="3628">
+											<Visible>false</Visible>
+											<ExtendedTooltip name="НедоступностьРегистрРасчетаРасширеннаяПодсказка" id="3629" />
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтрПланВидовХарактеристик" id="3630">
+									<ExtendedTooltip name="СтрПланВидовХарактеристикРасширеннаяПодсказка" id="3631" />
+									<ChildItems>
+										<Table name="ПланВидовХарактеристик" id="3632">
+											<DataPath>ПланВидовХарактеристик</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<EnableDrag>false</EnableDrag>
+											<EnableStartDrag>false</EnableStartDrag>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="ПланВидовХарактеристикРасширеннаяПодсказка" id="3633" />
+										</Table>
+										<LabelDecoration name="НедоступностьПланВидовХарактеристик" id="3634">
+											<Visible>false</Visible>
+											<ExtendedTooltip name="НедоступностьПланВидовХарактеристикРасширеннаяПодсказка" id="3635" />
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтрБизнесПроцесс" id="3636">
+									<ExtendedTooltip name="СтрБизнесПроцессРасширеннаяПодсказка" id="3637" />
+									<ChildItems>
+										<Table name="БизнесПроцесс" id="3638">
+											<DataPath>БизнесПроцесс</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<EnableDrag>false</EnableDrag>
+											<EnableStartDrag>false</EnableStartDrag>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="БизнесПроцессРасширеннаяПодсказка" id="3639" />
+										</Table>
+										<LabelDecoration name="НедоступностьБизнесПроцесс" id="3640">
+											<Visible>false</Visible>
+											<ExtendedTooltip name="НедоступностьБизнесПроцессРасширеннаяПодсказка" id="3641" />
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтрЗадача" id="3642">
+									<ExtendedTooltip name="СтрЗадачаРасширеннаяПодсказка" id="3643" />
+									<ChildItems>
+										<Table name="Задача" id="3644">
+											<DataPath>Задача</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<EnableDrag>false</EnableDrag>
+											<EnableStartDrag>false</EnableStartDrag>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="ЗадачаРасширеннаяПодсказка" id="3645" />
+										</Table>
+										<LabelDecoration name="НедоступностьЗадача" id="3646">
+											<Visible>false</Visible>
+											<ExtendedTooltip name="НедоступностьЗадачаРасширеннаяПодсказка" id="3647" />
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтрПланОбмена" id="3648">
+									<ExtendedTooltip name="СтрПланОбменаРасширеннаяПодсказка" id="3649" />
+									<ChildItems>
+										<Table name="ПланОбмена" id="3650">
+											<DataPath>ПланОбмена</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<EnableDrag>false</EnableDrag>
+											<EnableStartDrag>false</EnableStartDrag>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="ПланОбменаРасширеннаяПодсказка" id="3651" />
+										</Table>
+										<LabelDecoration name="НедоступностьПланОбмена" id="3652">
+											<Visible>false</Visible>
+											<ExtendedTooltip name="НедоступностьПланОбменаРасширеннаяПодсказка" id="3653" />
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтрПланСчетов" id="3654">
+									<ExtendedTooltip name="СтрПланСчетовРасширеннаяПодсказка" id="3655" />
+									<ChildItems>
+										<Table name="ПланСчетов" id="3656">
+											<DataPath>ПланСчетов</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<EnableDrag>false</EnableDrag>
+											<EnableStartDrag>false</EnableStartDrag>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="ПланСчетовРасширеннаяПодсказка" id="3657" />
+										</Table>
+										<LabelDecoration name="НедоступностьПланСчетов" id="3658">
+											<Visible>false</Visible>
+											<ExtendedTooltip name="НедоступностьПланСчетовРасширеннаяПодсказка" id="3659" />
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтрПланВидовРасчета" id="3660">
+									<ExtendedTooltip name="СтрПланВидовРасчетаРасширеннаяПодсказка" id="3661" />
+									<ChildItems>
+										<Table name="ПланВидовРасчета" id="3662">
+											<DataPath>ПланВидовРасчета</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<EnableDrag>false</EnableDrag>
+											<EnableStartDrag>false</EnableStartDrag>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="ПланВидовРасчетаРасширеннаяПодсказка" id="3663" />
+										</Table>
+										<LabelDecoration name="НедоступностьПланВидовРасчета" id="3664">
+											<Visible>false</Visible>
+											<ExtendedTooltip name="НедоступностьПланВидовРасчетаРасширеннаяПодсказка" id="3665" />
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+				<Page name="ДополнительнаяИнформация" id="490">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ДополнительнаяИнформацияРасширеннаяПодсказка" id="491" />
+					<ChildItems>
+						<Pages name="СтраницыДополнительнойИнформации" id="492">
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<PagesRepresentation>TabsOnTop</PagesRepresentation>
+							<ExtendedTooltip name="СтраницыДополнительнойИнформацииРасширеннаяПодсказка" id="493" />
+							<ChildItems>
+								<Page name="СтрОрганизации" id="3666">
+									<ExtendedTooltip name="СтрОрганизацииРасширеннаяПодсказка" id="3667" />
+									<ChildItems>
+										<Table name="СведенияОрганизации" id="3668">
+											<DataPath>СведенияОрганизации</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<EnableDrag>false</EnableDrag>
+											<EnableStartDrag>false</EnableStartDrag>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="СведенияОрганизацииРасширеннаяПодсказка" id="3669" />
+										</Table>
+										<LabelDecoration name="НедоступностьОрганизации" id="3670">
+											<Visible>false</Visible>
+											<ExtendedTooltip name="НедоступностьОрганизацииРасширеннаяПодсказка" id="3671" />
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтрХронологияДокументов" id="3672">
+									<ExtendedTooltip name="СтрХронологияДокументовРасширеннаяПодсказка" id="3673" />
+									<ChildItems>
+										<Table name="ХронологияДокументов" id="3674">
+											<DataPath>ХронологияДокументов</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<EnableDrag>false</EnableDrag>
+											<EnableStartDrag>false</EnableStartDrag>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="ХронологияДокументовРасширеннаяПодсказка" id="3675" />
+										</Table>
+										<LabelDecoration name="НедоступностьХронологияДокументов" id="3676">
+											<Visible>false</Visible>
+											<ExtendedTooltip name="НедоступностьХронологияДокументовРасширеннаяПодсказка" id="3677" />
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтрКонстанты" id="3678">
+									<ExtendedTooltip name="СтрКонстантыРасширеннаяПодсказка" id="3679" />
+									<ChildItems>
+										<Table name="Константы" id="3680">
+											<DataPath>Константы</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<EnableDrag>false</EnableDrag>
+											<EnableStartDrag>false</EnableStartDrag>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="КонстантыРасширеннаяПодсказка" id="3681" />
+										</Table>
+										<LabelDecoration name="НедоступностьКонстанты" id="3682">
+											<Visible>false</Visible>
+											<ExtendedTooltip name="НедоступностьКонстантыРасширеннаяПодсказка" id="3683" />
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтрПодключаемоеОборудование" id="3684">
+									<ExtendedTooltip name="СтрПодключаемоеОборудованиеРасширеннаяПодсказка" id="3685" />
+									<ChildItems>
+										<Table name="ПодключаемоеОборудование" id="3686">
+											<DataPath>ПодключаемоеОборудование</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<EnableDrag>false</EnableDrag>
+											<EnableStartDrag>false</EnableStartDrag>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="ПодключаемоеОборудованиеРасширеннаяПодсказка" id="3687" />
+										</Table>
+										<LabelDecoration name="НедоступностьПодключаемоеОборудование" id="3688">
+											<Visible>false</Visible>
+											<ExtendedTooltip name="НедоступностьПодключаемоеОборудованиеРасширеннаяПодсказка" id="3689" />
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтрРасширения" id="3690">
+									<ExtendedTooltip name="СтрРасширенияРасширеннаяПодсказка" id="3691" />
+									<ChildItems>
+										<Table name="СведенияРасширения" id="3692">
+											<DataPath>СведенияРасширения</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<EnableDrag>false</EnableDrag>
+											<EnableStartDrag>false</EnableStartDrag>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="СведенияРасширенияРасширеннаяПодсказка" id="3693" />
+										</Table>
+										<LabelDecoration name="НедоступностьРасширения" id="3694">
+											<Visible>false</Visible>
+											<ExtendedTooltip name="НедоступностьРасширенияРасширеннаяПодсказка" id="3695" />
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтрБиблиотеки" id="3696">
+									<ExtendedTooltip name="СтрБиблиотекиРасширеннаяПодсказка" id="3697" />
+									<ChildItems>
+										<Table name="СведенияБиблиотеки" id="3698">
+											<DataPath>СведенияБиблиотеки</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<EnableDrag>false</EnableDrag>
+											<EnableStartDrag>false</EnableStartDrag>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="СведенияБиблиотекиРасширеннаяПодсказка" id="3699" />
+										</Table>
+										<LabelDecoration name="НедоступностьБиблиотеки" id="3700">
+											<Visible>false</Visible>
+											<ExtendedTooltip name="НедоступностьБиблиотекиРасширеннаяПодсказка" id="3701" />
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+				<Page name="Отбор" id="458">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отбор</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отбор</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОтборРасширеннаяПодсказка" id="489" />
+					<ChildItems>
+						<InputField name="ОтборПоПериоду" id="3702">
+							<DataPath>ОтборПоПериоду</DataPath>
+							<ClearButton>true</ClearButton>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Период</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ОтборПоПериодуРасширеннаяПодсказка" id="3703" />
+							<Events>
+								<Event name="OnChange">ОтборПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<LabelDecoration name="НадписьОтборов" id="3706">
+			<Width>1</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>0</MaxWidth>
+			<Height>1</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отборы не установлены</v8:content>
+				</v8:item>
+			</Title>
+			<TitleHeight>1</TitleHeight>
+			<ExtendedTooltip name="НадписьОтборовРасширеннаяПодсказка" id="3707" />
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ИдентификаторСборкиФормы" id="352">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяОркестратораФормы" id="353">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресСистемногоСкана" id="351">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресДополнительногоСкана" id="350">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресТекущегоСкана" id="347">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресКэшаДиагностики" id="349">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресСканаДляСравнения" id="348">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ДанныеИнформационнойБазыИСистемы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СводнаяКолВо</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>СправочникиКолВо</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>СправочникиКолВоПредопределенные</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>СправочникиКолВоНаУдалении</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДокументыКолВо</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДокументыКолВоПроведенных</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДокументыКолВоНаУдалении</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РегистрыСведенийКолВо</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗадачиКолВо</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗадачиКолВоНаУдалении</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>БизнесПроцессыКолВо</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>БизнесПроцессыКолВоНаУдалении</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПланыОбменаКолВо</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПланыОбменаКолВоНаУдалении</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПланыВидовХарактеристикКолВо</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПланыВидовХарактеристикКолВоПредопределенные</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПланыВидовХарактеристикКолВоНаУдалении</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТекущаяКоманда</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">000</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Формат</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">ЧН=-</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+		<Attribute name="Сводная" id="354">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Справочник" id="355">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Документ" id="356">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РегистрСведений" id="357">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РегистрНакопления" id="358">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РегистрБухгалтерии" id="359">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РегистрРасчета" id="360">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПланВидовХарактеристик" id="361">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="БизнесПроцесс" id="362">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Задача" id="363">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПланОбмена" id="364">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПланСчетов" id="365">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПланВидовРасчета" id="366">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияОрганизации" id="367">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ХронологияДокументов" id="368">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Константы" id="369">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПодключаемоеОборудование" id="370">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияРасширения" id="371">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияБиблиотеки" id="372">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПоПериоду" id="373">
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+        <Attribute name="СистемныеСведенияДокумент" id="374">
+            <Type><v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type></Type>
+        </Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СканироватьВсе" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сканировать все</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СканироватьВсе</Action>
+		</Command>
+		<Command name="СканироватьОсновные" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основные</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СканироватьОсновные</Action>
+		</Command>
+		<Command name="СканироватьДополнительные" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СканироватьДополнительные</Action>
+		</Command>
+		<Command name="СистемныеСведения" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Системные</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СистемныеСведения</Action>
+		</Command>
+		<Command name="ЗапомнитьСкан" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить текущий скан в памяти (активировать режим сравнения)</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ЗапомнитьСкан</Action>
+		</Command>
+		<Command name="СохранитьСкан" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить текущий скан как файл...</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СохранитьСкан</Action>
+		</Command>
+		<Command name="ЗагрузитьСканДляСравнения" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить скан из файла для сравнения...</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ЗагрузитьСканДляСравнения</Action>
+		</Command>
+		<Command name="НапечататьСкан" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</Title>
+			<Action>НапечататьСкан</Action>
+		</Command>
+		<Command name="ОткрытьОсновнуюФормуСписка" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основную форму списка</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьОсновнуюФормуСписка</Action>
+		</Command>
+		<Command name="ОткрытьУниверсальнуюФормуСписка" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Универсальную форму списка</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьУниверсальнуюФормуСписка</Action>
+		</Command>
+		<Command name="ОткрытьПодробныйПросмотр" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект подробно</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьПодробныйПросмотр</Action>
+		</Command>
+		<Command name="ПерейтиНаСтраницуАвтора" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автор</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПерейтиНаСтраницуАвтора</Action>
+		</Command>
+		<Command name="ПоказатьСправку" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справка</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоказатьСправку</Action>
+		</Command>
+	</Commands>
+</Form>

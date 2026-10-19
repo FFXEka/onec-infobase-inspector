@@ -1,0 +1,6 @@
+* -text
+*.epf binary
+*.bin binary
+*.png binary
+
+# Keep the frozen 4.137 source bytes, including TAB-only blank lines and BOM.
